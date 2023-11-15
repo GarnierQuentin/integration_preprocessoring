@@ -455,6 +455,35 @@ table {
 #partager .partager_move .share_form p {
   font-size: 1.5vw;
 }
+#partager .partager_move .share_form .form {
+  color: #B2D234;
+  width: 75%;
+}
+#partager .partager_move .share_form .form .form_top {
+  display: flex;
+}
+#partager .partager_move .share_form .form .form_top .form_nom {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+}
+#partager .partager_move .share_form .form .form_top .form_prenom {
+  display: flex;
+  flex-direction: column;
+}
+#partager .partager_move .share_form .form .form_mail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+#partager .partager_move .share_form .form .form_motivation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+#partager .partager_move .share_form .form .form_motivation input {
+  height: 10vh;
+}
 
 /*
 * {

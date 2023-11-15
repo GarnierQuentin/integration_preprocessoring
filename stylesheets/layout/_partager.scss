@@ -36,6 +36,43 @@
                 font-size: 1.5vw;
             }
 
+            .form{
+                color: #B2D234;
+                width: 75%;
+
+                .form_top{
+                    display: flex;
+                    
+
+                    .form_nom{
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 20%;
+                    }
+
+                    .form_prenom{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+
+                .form_mail{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 5%;
+                }
+
+                .form_motivation{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 5%;
+
+                    input{
+                        height: 10vh;
+                    }
+                }
+            }
+
         }
     }
 
