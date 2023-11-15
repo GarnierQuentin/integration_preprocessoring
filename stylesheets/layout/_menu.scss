@@ -1,0 +1,176 @@
+
+#menu{
+    height: 140vh;
+    background-image: url(../../assets/pattern.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .section_top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        height: 30%;
+        width: 75%;
+
+        h1{
+            color: #B2D234;
+            font-size: 3vw;
+        }
+    }
+
+    .section_bottom{
+
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+
+        .secction_bottom_left{
+
+            .products{
+                display: grid;
+                grid-template-columns: 4fr 1fr;
+                margin: 5%;
+
+                .infos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 100%;
+                    width: 100%;
+
+                    .product_name{
+                        color: #B2D234;
+                        font-size: 1.5vw;
+                        margin-bottom: 3%;
+                    }
+                }
+
+                .prix{
+                    color: #B2D234;
+                    text-align: right;
+                }
+
+            }
+
+            .best_product{
+                
+                display: flex;
+                flex-direction: column;
+                margin: 5%;
+
+                .best_plan{
+
+                    display: flex;
+                    justify-content: right;
+
+                    .best_plan_placement{
+                        background-color: #B2D234;
+                        color: whitesmoke;
+                        padding: 1%;
+                        width: 25%;
+                        text-align: center;
+                    }
+
+                }
+
+                .best_plan_bloc{
+                    display: grid;
+                    grid-template-columns: 4fr 1fr;
+                    border: 2px solid #B2D234;
+                    padding: 2%;
+
+                    .infos{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 100%;
+                        width: 100%;
+    
+                        .product_name{
+                            color: #B2D234;
+                            font-size: 1.5vw;
+                            margin-bottom: 3%;
+                        }
+                    }
+    
+                    .prix{
+                        color: #B2D234;
+                        text-align: right;
+                    }
+
+                }
+
+            }
+
+        }
+
+
+        .section_bottom_right{
+
+            height: 100%;
+
+            .section_bottom_right_content{
+
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .titles{
+
+                    transform: rotate(-9deg);
+                    font-size: 4vw;
+                    font-style: italic;
+                    text-align: center;
+    
+                    .force_verte{
+                        color: #B2D234;
+                    }
+    
+                    .force_bleue{
+                        color: #2E5E9D;
+                    }
+    
+                }
+    
+                .section_bottom_right_text{
+                    text-align: center;
+                    font-size: 1.5vw;
+                }
+
+                .section_bottom_right_button{
+
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button{
+                        background-color: #B2D234;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 1.5vw;
+                        color: whitesmoke;
+                        padding: 2%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

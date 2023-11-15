@@ -1,0 +1,463 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+#presentation {
+  background-image: url(../../assets/Header_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#presentation #opacity {
+  position: absolute;
+  background-color: rgba(0, 128, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+}
+#presentation nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 1%;
+}
+#presentation nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  color: whitesmoke;
+  z-index: 2;
+  font-size: 1.5vw;
+}
+#presentation nav ul li {
+  margin-left: 3vw;
+}
+#presentation nav ul li button {
+  font-size: 1.5vw;
+  border-radius: 10px;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #B2D234;
+  border: none;
+}
+#presentation nav img {
+  z-index: 2;
+}
+#presentation .slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 3vw;
+  z-index: 2;
+}
+#presentation .slogan h1 {
+  font-size: 7vw;
+}
+#presentation .slogan h2 {
+  transform: rotate(-9deg);
+  margin-left: 10%;
+  font-size: 3vw;
+  font-style: italic;
+}
+#presentation .social_links {
+  margin-bottom: 1%;
+  z-index: 2;
+  display: flex;
+  justify-content: right;
+  margin-right: 3%;
+}
+
+.screen {
+  height: 100vh;
+}
+
+#couleurs {
+  background-image: url(../../assets/louis-hansel-MlPD-AzZYMg-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#couleurs .colors_positioning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#couleurs .colors_positioning .couleurs_sides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  color: whitesmoke;
+}
+#couleurs .colors_positioning .couleurs_sides .couleur_verte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(178, 210, 52, 0.85);
+  width: 90%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#couleurs .colors_positioning .couleurs_sides .couleur_verte .couleur_title {
+  font-size: 3vw;
+  margin-bottom: 5%;
+}
+#couleurs .colors_positioning .couleurs_sides .couleur_verte .couleur_ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  gap: 20%;
+}
+#couleurs .colors_positioning .couleurs_sides .couleur_bleue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(46, 94, 157, 0.85);
+  width: 90%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#couleurs .colors_positioning .couleurs_sides .couleur_bleue .couleur_title {
+  font-size: 3vw;
+  margin-bottom: 5%;
+}
+#couleurs .colors_positioning .couleurs_sides .couleur_bleue .couleur_ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  gap: 20%;
+}
+
+#menu {
+  height: 140vh;
+  background-image: url(../../assets/pattern.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#menu .section_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 30%;
+  width: 75%;
+}
+#menu .section_top h1 {
+  color: #B2D234;
+  font-size: 3vw;
+}
+#menu .section_bottom {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+#menu .section_bottom .secction_bottom_left .products {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 5%;
+}
+#menu .section_bottom .secction_bottom_left .products .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+#menu .section_bottom .secction_bottom_left .products .infos .product_name {
+  color: #B2D234;
+  font-size: 1.5vw;
+  margin-bottom: 3%;
+}
+#menu .section_bottom .secction_bottom_left .products .prix {
+  color: #B2D234;
+  text-align: right;
+}
+#menu .section_bottom .secction_bottom_left .best_product {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+#menu .section_bottom .secction_bottom_left .best_product .best_plan {
+  display: flex;
+  justify-content: right;
+}
+#menu .section_bottom .secction_bottom_left .best_product .best_plan .best_plan_placement {
+  background-color: #B2D234;
+  color: whitesmoke;
+  padding: 1%;
+  width: 25%;
+  text-align: center;
+}
+#menu .section_bottom .secction_bottom_left .best_product .best_plan_bloc {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border: 2px solid #B2D234;
+  padding: 2%;
+}
+#menu .section_bottom .secction_bottom_left .best_product .best_plan_bloc .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+#menu .section_bottom .secction_bottom_left .best_product .best_plan_bloc .infos .product_name {
+  color: #B2D234;
+  font-size: 1.5vw;
+  margin-bottom: 3%;
+}
+#menu .section_bottom .secction_bottom_left .best_product .best_plan_bloc .prix {
+  color: #B2D234;
+  text-align: right;
+}
+#menu .section_bottom .section_bottom_right {
+  height: 100%;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content .titles {
+  transform: rotate(-9deg);
+  font-size: 4vw;
+  font-style: italic;
+  text-align: center;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content .titles .force_verte {
+  color: #B2D234;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content .titles .force_bleue {
+  color: #2E5E9D;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content .section_bottom_right_text {
+  text-align: center;
+  font-size: 1.5vw;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content .section_bottom_right_button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu .section_bottom .section_bottom_right .section_bottom_right_content .section_bottom_right_button button {
+  background-color: #B2D234;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  color: whitesmoke;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#sur_mesure {
+  background-image: url(../../assets/61842.png);
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#sur_mesure .salade_sur_mesure {
+  position: absolute;
+  right: 50%;
+  width: 40vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+#sur_mesure .salade_sur_mesure h1 {
+  font-size: 3vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #B2D234;
+}
+#sur_mesure .salade_sur_mesure p {
+  width: 75%;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+#sur_mesure .salade_sur_mesure button {
+  text-align: center;
+  font-size: 1.5vw;
+  width: 30%;
+  background-color: #B2D234;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 1%;
+  margin-top: 5%;
+}
+#sur_mesure .salade_img {
+  position: absolute;
+  right: 0%;
+  width: 50%;
+}
+#sur_mesure .salade_img img {
+  width: 100%;
+  height: 100%;
+}
+
+#prepare_sur_place {
+  background-image: url(../../assets/ismael-trevino-NDyuR4Huig8-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#prepare_sur_place div {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  margin-top: 5%;
+}
+#prepare_sur_place div div {
+  background-color: rgba(178, 210, 52, 0.85);
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: absolute;
+  margin-left: 35%;
+}
+#prepare_sur_place div div h1 {
+  color: whitesmoke;
+  font-size: 2.7vw;
+  text-align: center;
+}
+#prepare_sur_place div div p {
+  color: whitesmoke;
+  font-size: 1vw;
+  text-align: center;
+  width: 90%;
+}
+#prepare_sur_place div div button {
+  border: none;
+  color: #B2D234;
+  border-radius: 10px;
+  font-size: 2vw;
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#partager .partager_move {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#partager .partager_move .salade_share_img {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+#partager .partager_move .salade_share_img img {
+  width: 100%;
+  height: 100%;
+}
+#partager .partager_move .share_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#partager .partager_move .share_form h1 {
+  color: #B2D234;
+  font-size: 3vw;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+#partager .partager_move .share_form p {
+  font-size: 1.5vw;
+}
+
+/*
+* {
+  outline: 1px solid red;
+}
+*//*# sourceMappingURL=main.css.map */

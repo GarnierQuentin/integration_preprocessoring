@@ -1,0 +1,70 @@
+#couleurs{
+    background-image: url(../../assets/louis-hansel-MlPD-AzZYMg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .colors_positioning{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .couleurs_sides{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 75%;
+            color: whitesmoke;
+            
+            .couleur_verte{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgba(178, 210, 52, 0.85);
+                width: 90%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+    
+                .couleur_title{
+                    font-size: 3vw;
+                    margin-bottom: 5%;
+                }
+    
+                .couleur_ingredients{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    text-align: center;
+                    align-items: center;
+                    gap: 20%;
+                }
+            }
+    
+            .couleur_bleue{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgba(46, 94, 157, 0.85);
+                width: 90%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+    
+                .couleur_title{
+                    font-size: 3vw;
+                    margin-bottom: 5%;
+                }
+    
+                .couleur_ingredients{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    text-align: center;
+                    align-items: center;
+                    gap: 20%;
+                }
+            }
+        }
+
+    }
+
+}

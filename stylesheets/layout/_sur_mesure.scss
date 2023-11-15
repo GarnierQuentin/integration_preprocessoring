@@ -1,0 +1,55 @@
+#sur_mesure{
+    background-image: url(../../assets/61842.png);
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .salade_sur_mesure{
+        position: absolute;
+        right: 50%;
+        width: 40vw;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+
+        h1{
+            font-size: 3vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            color: #B2D234;
+        }
+
+        p{
+            width: 75%;
+            display: flex;
+            justify-content: left;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+
+        button{
+            text-align: center;
+            font-size: 1.5vw;
+            width: 30%;
+            background-color: #B2D234;
+            border: none;
+            border-radius: 5px;
+            color: whitesmoke;
+            padding: 1%;
+            margin-top: 5%;
+        }
+    }
+
+    .salade_img{
+        position: absolute;
+        right: 0%;
+        width: 50%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
